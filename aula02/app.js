@@ -1,18 +1,18 @@
 // inteiros e decimais
-const radius = 10
-const pi = 3.14
+const radius = 10;
+const pi = 3.14;
 
-console.log(radius, pi)
+console.log(radius, pi);
 
 // operadores aritméticos
-const area = pi * radius ** 2
+const area = pi * radius ** 2;
 
 // ordem de operações
-const crazyOperation = 5 * (10 - 3) ** 2
+const crazyOperation = 5 * (10 - 3) ** 2;
 
-console.log(crazyOperation)
+console.log(crazyOperation);
 
-console.log(area)
+console.log(area);
 
 // 1º parenteses
 // 2º expoentes e raízes
@@ -20,30 +20,27 @@ console.log(area)
 // 4º adição e subtração
 
 // operadores de incremento e decremento
-let postLikes = 11
+let postLikes = 11;
 
 // postLikes = postLikes + 1
 // postLikes++
-postLikes--
+postLikes--;
 
 // operadores addition, subtraction, multiplication and division assignment
 // postLikes = postLikes + 10
 // postLikes += 10
 // postLikes -= 5
 // postLikes *= 3
-postLikes /= 2
+postLikes /= 2;
 
-console.log(postLikes)
+console.log(postLikes);
 
 // NaN - not a number
-console.log(7 / 'oi')
+console.log(7 / "oi");
 
 // concatenação de número com string
-const likesMessage = 'O post tem ' + postLikes + ' likes.'
-console.log(likesMessage)
-
-
-
+const likesMessage = "O post tem " + postLikes + " likes.";
+console.log(likesMessage);
 
 /*
 
