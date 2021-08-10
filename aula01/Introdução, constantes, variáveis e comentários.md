@@ -24,13 +24,14 @@ Aprendi a **lincar** o arquivo de HTML a um **arquivo externo** de JavaScript, o
 
 # Variáveis, constantes
 ## Variáveis
-VAR  - Sintaxe antiga para se declarar o nome de uma variável, de escopo global e de valor reatribuível, além da variável ser içada (_hoisting_) ela é automaticamente inicializada com o valor undefined (caso não seja atribuído nenhum outro valor).
+VAR  - Sintaxe antiga para se declarar o nome de uma variável, de valor re-atribuível de escopo global, se dentro de função, só é visível dentro da função geratriz, além da variável ser içada (_hoisting_) ela é automaticamente inicializada com o valor undefined (caso não seja atribuído nenhum outro valor), bloco simples não é considerado escopo relevante.
 
-LET - Sintaxe moderna (ECMAScript 6) para se declarar o nome de uma variável, de escopo bloco e de valor reatribuível dentro do escopo do bloco e não sofre com o processo de hoisting.
+LET - Sintaxe moderna (ECMAScript 6) para se declarar o nome de uma variável, de escopo bloco e de valor re-atribuível dentro do escopo do bloco e não sofre com o processo de hoisting.
 
-CONST - Sintaxe também moderna (ECMAScript 6) para se declarar o nome de uma variável, de escopo bloco e de valor não reatribuível, a não ser que seja uma propriedade de um objeto.
+CONST - Sintaxe também moderna (ECMAScript 6) para se declarar o nome de uma variável, de escopo bloco e de valor não re-atribuível, a não ser que seja uma propriedade de um objeto.
 
 
 # Comentários no código
 // - Comentário de uma linha
-/**/ - comentario de múltiplas lilhas
+
+/**/ - comentário de múltiplas linhas
