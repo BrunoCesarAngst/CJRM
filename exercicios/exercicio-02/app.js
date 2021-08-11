@@ -1,11 +1,11 @@
 /*
-01 - No index.html deste diretório (exercicio-02):
+01 - No index.html deste diretório (exercício-02):
 
 - Declare uma marcação HTML;
 - Modifique a linguagem para português do Brasil;
 - Remova as meta tags desnecessárias;
 - Modifique o title para "Exercício 02";
-- E linke este arquivo, app.js, antes do fechamento da tag body.
+- E linque este arquivo, app.js, antes do fechamento da tag body.
 */
 
 /*
@@ -18,7 +18,8 @@
 Utilize os espaços entre os comentários abaixo para executar os códigos dos exercícios. Inclusive este.
 */
 
-
+const aString = "Grande poderes trazem grandes responsabilidades.";
+// console.log(aString)
 
 /*
 04 - Comente o console.log acima, e:
@@ -30,7 +31,13 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba a "myFavoriteTom" no console do browser.
 */
 
+const tom = "Tom";
+const firstTom = "Hanks";
+const secondTom = "Cruise";
 
+const myFavoriteTom = `${tom} ${firstTom}`;
+
+// console.log(myFavoriteTom)
 
 /*
 05 - Comente o console.log acima, e:
@@ -41,7 +48,11 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba a "js" no console do browser;
 */
 
+const programmingLanguage = "JavaScript";
 
+const js = programmingLanguage[0] + programmingLanguage[4];
+
+// console.log(js.toLowerCase())
 
 /*
 06 - Comente o console.log acima, e,
@@ -51,7 +62,10 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba a "mdn" no console do browser;
 */
 
-const mozilla = 'Mozilla Developer Network'
+const mozilla = "Mozilla Developer Network";
+const mdn = mozilla[0] + mozilla[8] + mozilla[18];
+
+// console.log(mdn.toLowerCase())
 
 /*
 07 - Comente o console.log acima, e,
@@ -59,7 +73,8 @@ const mozilla = 'Mozilla Developer Network'
 - Exiba no console do browser a quantidade de caracteres que a constante "programmingLanguage" possui;
 */
 
-
+const quantityLetters = programmingLanguage.length;
+// console.log(quantityLetters)
 
 /*
 08 - Comente o console.log acima, e,
@@ -69,7 +84,14 @@ const mozilla = 'Mozilla Developer Network'
 - Dica: utilize a propriedade ".length".
 */
 
-let randomWord = 'Araponga'
+let randomWord = "Micaela";
+const numberOfLetters = randomWord.length - 1;
+
+// console.log(numberOfLetters)
+
+const letterEnd = randomWord[numberOfLetters];
+
+// console.log(letterEnd)
 
 /*
 09 - Comente o console.log acima, e,
@@ -79,7 +101,10 @@ let randomWord = 'Araponga'
 - Não digite a nova string manualmente.
 */
 
-const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
+const summerMessage = "O VERÃO CHEGA NESTE FIM DE SEMANA";
+
+const phraseInLowercase = summerMessage.toLowerCase();
+// console.log(phraseInLowercase)
 
 /*
 10 - Comente o console.log acima, e,
@@ -89,7 +114,10 @@ const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
 - Não digite a nova string manualmente.
 */
 
-const winterMessage = 'o inverno está chegando'
+const winterMessage = "o inverno está chegando";
+
+const phraseInUppercase = winterMessage.toUpperCase();
+// console.log(phraseInUppercase)
 
 /*
 11 - Comente o console.log acima, e,
@@ -97,7 +125,8 @@ const winterMessage = 'o inverno está chegando'
 - Exiba, no console, o index do caractere "v" da "winterMessage";
 */
 
-
+const showIndexOfWord = winterMessage.indexOf("v");
+// console.log(showIndexOfWord)
 
 /*
 12 - Comente o console.log acima, e,
@@ -105,7 +134,8 @@ const winterMessage = 'o inverno está chegando'
 - Exiba, no console, o index da última ocorrência do caractere "n" da "winterMessage".
 */
 
-
+const indexOfEndLetterN = winterMessage.lastIndexOf("n");
+// console.log(indexOfEndLetterN)
 
 /*
 13 - Comente o console.log acima, e,
@@ -114,7 +144,9 @@ const winterMessage = 'o inverno está chegando'
 - Não digite a string "J.K." manualmente;
 */
 
-const harryPotterAuthor = 'J.K. Rowling'
+const harryPotterAuthor = "J.K. Rowling";
+const partOfName = harryPotterAuthor.slice(0, 4);
+// console.log(partOfName)
 
 /*
 14 - Comente o console.log acima, e,
@@ -124,7 +156,10 @@ const harryPotterAuthor = 'J.K. Rowling'
 - Exiba a "realBestMovie" no console.
 */
 
-const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
+const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!';
+const realBestMovie = bestMovie.replace("La la land", "MoonLight");
+
+// console.log(realBestMovie)
 
 /*
 15 - Comente o console.log acima, e,
@@ -133,7 +168,9 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
 - Exiba a reminder no console. O resultado deve ser 1;
 */
 
+const reminder = 10 % 3;
 
+// console.log(reminder)
 
 /*
 16 - Comente o console.log acima, e,
@@ -143,7 +180,10 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
 - O valor exibido no console deve ser 7.
 */
 
-let episodes = 6
+let episodes = 6;
+episodes++;
+
+// console.log(episodes)
 
 /*
 17 - Comente o console.log acima, e,
@@ -153,7 +193,9 @@ let episodes = 6
 - O valor exibido no console deve ser 6.
 */
 
+episodes--;
 
+// console.log(episodes)
 
 /*
 18 - Comente o console.log acima, e,
@@ -162,7 +204,9 @@ let episodes = 6
 - Após a atribuição, exiba a let "episodes" no console.
 */
 
+episodes += 10;
 
+// console.log(episodes)
 
 /*
 19 - Comente o console.log acima, e,
@@ -172,7 +216,10 @@ let episodes = 6
 - Exiba a "allEpisodes" no console.
 */
 
-
+const allEpisodes = `
+  O nº de episódios é: ${episodes}
+`;
+// console.log(allEpisodes)
 
 /*
 20 - Comente o console.log acima, e,
@@ -183,7 +230,7 @@ let episodes = 6
 - Não use template strings.
 */
 
-// const bookMessage = ''O Conto da Aia' é um dos livros mais vendidos da década.'
+// const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
 // console.log(bookMessage)
 
 /*
@@ -197,7 +244,16 @@ let episodes = 6
 - Exiba a "newName" no console;
 */
 
-const name = 'walter white'
+const theName = "walter white";
+
+let newName =
+  theName[0].toUpperCase() +
+  theName.slice(1, 6) +
+  " " +
+  theName[7].toUpperCase() +
+  theName.slice(8);
+
+// console.log(newName);
 
 /*
 22 - Comente o console.log acima, e,
@@ -208,3 +264,8 @@ const name = 'walter white'
 - Não modifique a string da const "name";
 - Exiba a "newName" no console;
 */
+
+newName = `
+  ${theName[0].toUpperCase()}${theName.slice(1,6)} ${theName[7].toUpperCase()}${theName.slice(8)}
+`
+// console.log(newName)

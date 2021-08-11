@@ -1,3 +1,37 @@
+// Template strings
+
+const postTitle = "JavaScript Puro";
+const postAuthor = "Bruno Angst";
+const postComment = 15;
+
+// usando concatenação
+const newPost =
+  'A postagem "' +
+  postTitle +
+  '", escrito por ' +
+  postAuthor +
+  ' tem ' +
+  postComment +
+  ' comentários';
+
+console.log(newPost);
+
+// usando template strings
+const postMessages = `
+  A postagem ${postTitle}, escrita por ${postAuthor} tem ${postComment} comentários
+`;
+
+console.log(postMessages);
+
+// criando template HTML
+
+const html = `
+  <h2>${postTitle}</h2>
+  <p>Author: ${postAuthor}</p>
+  <strong>Este post tem ${postComment} comentários</strong>
+`
+console.log(html)
+
 // inteiros e decimais
 const radius = 10;
 const pi = 3.14;
@@ -42,8 +76,6 @@ console.log(7 / "oi");
 const likesMessage = "O post tem " + postLikes + " likes.";
 console.log(likesMessage);
 
-/*
-
 // strings um encadeamento de caracteres (letras ou números)
 // entre aspas simples ou duplas
 console.log('hello, world')
@@ -77,5 +109,3 @@ console.log(result, fullName)
 const index = email.indexOf('@') // <- dentro dos parenteses há os ARGUMENTOS
 
 console.log(index)
-
-*/
