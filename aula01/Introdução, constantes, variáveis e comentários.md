@@ -5,7 +5,7 @@ Após configurar o ambiente de desenvolvimento com o [VSCODE](https://code.visua
 Aprendi a **manipular o console do browser** como sendo um **playground** para **interagir, visualizar e testar** o código JavaScript da aplicação.
 
 # Lincar arquivos
-## ⚓️
+## 🔗
 Aprendi a **lincar** o arquivo de HTML a um **arquivo externo** de JavaScript, o que contribui com a **organização** e a **legibilidade** do código, evitando em colocar todos códigos em um mesmo arquivo (mesmo sendo possível).
 
 ```html
@@ -23,7 +23,7 @@ Aprendi a **lincar** o arquivo de HTML a um **arquivo externo** de JavaScript, o
 ```
 
 # Variáveis, constantes
-## Variáveis
+## Variáveis 🧷
 VAR  - Sintaxe antiga para se declarar o nome de uma variável, de valor re-atribuível de escopo global, se dentro de função, só é visível dentro da função geratriz, além da variável ser içada (_hoisting_) ela é automaticamente inicializada com o valor undefined (caso não seja atribuído nenhum outro valor), bloco simples não é considerado escopo relevante.
 
 LET - Sintaxe moderna (ECMAScript 6) para se declarar o nome de uma variável, de escopo bloco e de valor re-atribuível dentro do escopo do bloco e não sofre com o processo de hoisting.
