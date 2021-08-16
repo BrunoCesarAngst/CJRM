@@ -13,7 +13,18 @@
   "Minhas 3 séries favoritas são: SÉRIE_01, SÉRIE_02 e SÉRIE_03."
 */
 
+const my3FavoriteTVShows = ['Highlander', 'Coração Valente', 'Matrix']
 
+// const sentence = `
+// Meus 3 filmes favoritos são: ${my3FavoriteTVShows[0]}, ${my3FavoriteTVShows[1]} e ${my3FavoriteTVShows[2]}
+// `
+
+const sentence = `
+Meus 3 filmes favoritos são: ${my3FavoriteTVShows.join(', ')}
+`
+  .replace(', M', ' e M')
+
+// console.log(sentence)
 
 /*
   02 - Comente o console.log() acima e:
@@ -22,19 +33,21 @@
     possui 3 itens.
 */
 
-
+// console.log(my3FavoriteTVShows.length === 3)
 
 /*
   03 - Comente o console.log() acima e:
 
-  - Após a constante abaixo, armazene em uma constante "isRandomTVShowIncluded"  
-    um boolean que indica se a série que a "randomTVShow" armazena é uma das  
-    suas 3 séries favoritas;
+  - Após a constante abaixo, armazene em uma constante isRandomTVShowIncluded" um boolean que indica se a série que a "randomTVShow" armazena é uma das suas 3 séries favoritas;
   - Utilize o método adequado para fazer essa verificação;
   - Exiba no console o boolean que a "isRandomTVShowIncluded" recebeu.
 */
 
 const randomTVShow = 'Watchmen'
+
+const isRandomTVShowIncluded = my3FavoriteTVShows.includes(randomTVShow)
+
+// console.log(isRandomTVShowIncluded)
 
 /*
   04 - Comente o console.log() acima e:
@@ -47,7 +60,10 @@ const randomTVShow = 'Watchmen'
   "O tipo de dado que a const "isRandomTVShowIncluded" armazena é: TIPO_DE_DADO."
 */
 
-
+const typeSentence = `
+  O tipo de dado que a const "isRandomTVShowIncluded" armazena é: ${typeof my3FavoriteTVShows}.
+`
+// console.log(typeSentence)
 
 /*
   05 - Comente o console.log() acima e:
@@ -63,7 +79,12 @@ const randomTVShow = 'Watchmen'
   caracteres? BOOLEAN."
 */
 
+const numberOfCharacters = 39
+const isBoolean = typeSentence.length > numberOfCharacters
 
+// console.log(`
+//   A string que a "typeSentence" armazena tem mais de ${numberOfCharacters} caracteres? ${String(isBoolean).replace('t', 'T')}
+// `)
 
 /*
   06 - Comente o console.log() acima e:
@@ -71,11 +92,15 @@ const randomTVShow = 'Watchmen'
   - Após a constante "falsyValues", exiba no console a frase abaixo,  
     substituindo "NÚMERO_DE_ITENS" e "BOOLEAN" pelas informações corretas.
 
-  "Todos os NÚMERO_DE_ITENS itens do array "falsyValues" são falsy. Inclusive o  
+  "Todos os NÚMERO_DE_ITENS itens do array "falsyValues" são falsy. Inclusive o 
   BOOLEAN."
 */
 
-const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
+const falsyValues = [0, '', false, '', ``, null, undefined, NaN]
+
+// console.log(`
+//   Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${falsyValues[2]}
+// `)
 
 /*
   07 - Comente o console.log() acima e:
@@ -86,7 +111,10 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Você sabe por que essa conversão resultou em true?
 */
 
+const crazyOperation = null + 1
+const crazyConversion = Boolean(crazyOperation)
 
+// console.log(crazyConversion) // true, porque o JS interpreta automaticamente null como 0
 
 /*
   08 - Comente o console.log() acima e:
@@ -97,29 +125,36 @@ const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
   - Exiba a frase abaixo no console, substituindo "BOOLEAN" pela informação  
     correta.
 
-  "A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação  
-  é: BOOLEAN."
+  "A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação é: BOOLEAN."
 */
 
+const ages = [31, 82, 61, 11]
 
+const agesSum = ages[0] + ages[2]
+
+// console.log(`
+//   A soma entre o 1º e o 2º itens de "ages" é menor ou igual a 92. Essa informação é: ${agesSum <= 92}
+// `)
 
 /*
   09 - Comente o console.log() acima e:
 
-  - Armazene em uma const "isNotAString" uma expressão que verifica se o tipo de  
-    dado que a "randomTVShow" armazena não é uma string;
+  - Armazene em uma const "isNotAString" uma expressão que verifica se o tipo de dado que a "randomTVShow" armazena não é uma string;
   - Essa expressão deve resultar em false.
   - Exiba a "isNotAString" no console.
 */
 
+const isNotAString = typeof randomTVShow !== 'string'
 
+// console.log(isNotAString)
 
 /*
   10 - Comente o console.log() acima e:
 
-  - Abaixo da constante "evenNumbers", exiba no console um boolean que indica se  
-    o número 8 existe no array;
+  - Abaixo da constante "evenNumbers", exiba no console um boolean que indica se o número 8 existe no array;
   - Não utilize o método includes desta vez.
 */
 
 const evenNumbers = [0, 2, 4, 6, 8, 10]
+
+console.log(evenNumbers.indexOf(8) !== -1)
